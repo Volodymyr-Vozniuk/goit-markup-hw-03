@@ -4,12 +4,6 @@ body {
   color: #434455;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 a {
   text-decoration: none;
 }
@@ -79,14 +73,19 @@ img {
 }
 
 .nav-menu {
+  display: flex;
+}
+
+.nav-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
-.nav-menu:hover .nav-menu:focus {
+.nav-link:hover .nav-menu:focus {
   color: #404bbf;
 }
 
