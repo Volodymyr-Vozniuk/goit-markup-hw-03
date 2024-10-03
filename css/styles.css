@@ -37,21 +37,19 @@ img {
 
 .neader {
   background-color: #ffffff;
-  display: flex;
   border-bottom: 1px solid #e7e9fc;
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
-  padding: 0 15px 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .logo-webstudio {
@@ -78,7 +76,6 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-right: 332px;
 }
 
 .nav-menu {
@@ -93,16 +90,19 @@ img {
   color: #404bbf;
 }
 
-.address-header,
 .header-contacts {
   font-style: normal;
+}
+
+.address-header {
+  display: flex;
+  margin: 0 0 0 auto;
 }
 
 .contact-list {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-right: 0;
 }
 
 .header-contacts {
@@ -164,7 +164,15 @@ img {
 
 .visually-hidden {
   position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section {
